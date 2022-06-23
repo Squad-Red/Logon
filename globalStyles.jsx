@@ -6,18 +6,9 @@ export const GlobalStyle = createGlobalStyle`
 		font-family: 'Poppins', sans-serif;
 }
 
-body, html{
+body, html, #root{
 	height: 100%;
 	padding: 0;
 	margin: 0;
-}
-
-#root{
-	padding: 20px;
-	min-height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 }
 `;
