@@ -37,24 +37,28 @@ export const TextWrapper = styled.p`
         color: #E0E0E0;
         font-size: 1rem;
         text-align: left;
+        user-select: none;
     }
 
     &.home {
         color: #222222;
         font-size: 1.5rem;
         text-align: right;
+        user-select: none;
     }
 
     &.home-footer {
         color: #E0E0E0;
         font-size: 0.75rem;
         text-align: right;
+        user-select: none;
         margin-right: ${toRem(40)};   
     }
 
     @media screen and (max-width: 780px) {
         &.logon {
             font-size: 0.75rem;
+            user-select: none;
         }   
     }
 `;
