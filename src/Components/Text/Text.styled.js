@@ -1,13 +1,14 @@
 import styled from "styled-components";
+import { toRem } from "../../utils/convertToRem";
 
 export const TextDiv = styled.div`
 
     &.logon {  
-        max-width: 19em;
+        max-width: ${toRem(350)};
     }
 
     &.home-footer {
-        max-width: 36em;
+        max-width: ${toRem(560)};
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
@@ -16,13 +17,13 @@ export const TextDiv = styled.div`
     &.home-footer::before {
        content: '';
        position: absolute;
-       height: 3.5em;
-       border-left: 1px solid #E0E0E0;
+       height: ${toRem(70)};
+       border-left: 0.09rem solid #E0E0E0;
     }
 
     @media screen and (max-width: 780px) {
         &.logon {
-            max-width: 14em;
+            max-width: ${toRem(230)} ;
         }
         
     }
@@ -34,26 +35,26 @@ export const TextWrapper = styled.p`
 
     &.logon {
         color: #E0E0E0;
-        font-size: 16px;
+        font-size: 1rem;
         text-align: left;
     }
 
     &.home {
         color: #222222;
-        font-size: 24px;
+        font-size: 1.5rem;
         text-align: right;
     }
 
     &.home-footer {
         color: #E0E0E0;
-        font-size: 12px;
+        font-size: 0.75rem;
         text-align: right;
-        margin-right: 4em;   
+        margin-right: ${toRem(40)};   
     }
 
     @media screen and (max-width: 780px) {
         &.logon {
-            font-size: 12px;
+            font-size: 0.75rem;
         }   
     }
 `;
