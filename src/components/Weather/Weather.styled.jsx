@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import {toRem} from '../../utils/convertToRem';
 
 export const Location = styled.p`
-    font-size: 0.875rem;
+    font-size: ${toRem(14)};
     color: #222222;
 `;
 
@@ -12,14 +13,14 @@ export const WeatherGroup = styled.div`
 `;
 
 export const Temperature = styled.span`
-    font-size: 3rem;
+    font-size: ${toRem(48)};
     font-weight: 700;
     color: #222222;
-    line-height: 0.625rem;
+    line-height: ${toRem(10)};
 `;
 
 export const WeatherIcon = styled.img`
-    width: 2.125rem;
-    height: 2.125rem;
-    margin-bottom: 0.3125rem;
+    width: ${toRem(34)};
+    height: ${toRem(34)};
+    margin-bottom: ${toRem(5)};
 `;
