@@ -53,6 +53,7 @@ export const getWeather = (setLocation, setIcon, setTemperature) => {
                 setTemperature(`${data.current.temp_c}º`);
                 console.log(data);
             } catch (error) {
+                setLocation('Clima indisponível');
                 console.error(error);
             }
         },
