@@ -2,22 +2,21 @@ import React from 'react';
 import { Input } from '../Input/Input';
 import Button from '../Button/Button';
 import { FormStyled } from './Form.styled';
-import  { Text } from '../Text/Text';
-
+import { InputsStyled } from './Form.styled';
+import { FormBtnStyled } from './Form.styled';
 
 const Form = () => {
-return (
-    <FormStyled>
-        <Text text="Login" page="Logon" />
-        <div>
-        <Input placeholder="Usuário" type="text" />
-        <Input placeholder="Senha" type="password" />
-        </div>
-        <div>
-        <Button title="Continuar" type="Submit" id="Login"/>
-        </div>
-    </FormStyled>
-)
+    return (
+        <FormStyled>
+            <h5>Login</h5>
+            <InputsStyled>
+                <Input placeholder="Usuário" type="text" />
+                <Input placeholder="Senha" type="password" />
+            </InputsStyled>
+            <FormBtnStyled>
+                <Button title="Continuar" type="Submit" id="Login" />
+            </FormBtnStyled>
+        </FormStyled>
+    )
 }
-
 export default Form;
