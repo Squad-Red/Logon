@@ -1,14 +1,15 @@
 import styled from 'styled-components';
+import {toRem} from '../../utils/convertToRem';
 
 export const InputContainer = styled.div`
-    max-width: 23.75rem;
-    height: 3.75rem;
-    padding: 0 1.25rem;
+    max-width: ${toRem(379)};
+    height: ${toRem(60)};
+    padding: 0 ${toRem(20)};
     display: inline-flex;
     align-items: center;
     border: 1px solid #ffffff;
     border-width: 2px;
-    border-radius: 50px;
+    border-radius: ${toRem(50)};
 
     :focus-within {
         outline: 1px solid #e9b425;
@@ -33,6 +34,6 @@ export const InputStyled = styled.input`
 `;
 
 export const IconStyled = styled.img`
-    width: 1.25rem;
+    width: ${toRem(20)};
     color: #e0e0e0;
 `;
