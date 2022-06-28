@@ -20,7 +20,13 @@ export const StyledH3 = styled.h3`
 `;
 
 export const StyledH4 = styled.h4`
-    font-size: ${toRem(36)};
+    font-size:  ${toRem(30)};
+    font-weight: 400;
+    color: #E0E0E0;
+`;
+
+export const StyledH5 = styled.h5`   
+    font-size: ${toRem(24)};
     font-weight: 700;
     color: #C12D18;
     text-align: right;
