@@ -9,6 +9,12 @@ export const FormStyled = styled.form`
     grid-template-rows: 17.28% 37.78% 28.4% 16.54%;
 `;
 
+export const FormTitleStyled = styled.div`
+    display: flex;
+    align-items: center;
+
+`;
+
 export const InputsStyled = styled.div`
     display: flex;
     flex-direction: column;
@@ -18,7 +24,6 @@ export const InputsStyled = styled.div`
 export const FormErrorStyled = styled.div`
     text-align: center;
     display: flex;
-
 `;
 
 export const ErrorMessagesStyled = styled.span`

@@ -7,6 +7,8 @@ import { FormButtonStyled } from './Form.styled';
 import { useForm } from "react-hook-form";
 import { ErrorMessagesStyled } from './Form.styled';
 import { FormErrorStyled } from './Form.styled';
+import Title from '../Title/Title';
+import { FormTitleStyled } from './Form.styled';
 
 
 const Form = () => {
@@ -15,7 +17,9 @@ const Form = () => {
 
         return (  
         <FormStyled onSubmit={handleSubmit(onSubmit)}>
-            <h5>Login</h5>
+            <FormTitleStyled>
+            <Title tagName="h4" text="Login" />
+            </FormTitleStyled>
             <InputsStyled>
                 <Input placeholder="Usuário" type="text" {...{register: register('user',{pattern: /^[\w.-]+\.[\w.-]+$/, required:true })}} />
                 <Input placeholder="Senha" type="password" {...{register: register('password',{pattern: /^(?=.*[0-9])(?!.*[ !@#%^&*_=+-])(?!.*[a-zA-z]).{6,9}$/, required:true })}} required/>                                      
