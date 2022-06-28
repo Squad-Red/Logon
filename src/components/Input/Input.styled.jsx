@@ -11,11 +11,9 @@ export const InputContainer = styled.div`
     border-width: 2px;
     border-radius: ${toRem(50)};
 
-    :focus-within {
-        outline: 1px solid #e9b425;
-        outline-offset: -2px;
-        outline-width: 2px;
-    }
+    &&& {
+    border: 2px solid ${props => props.isError ? '#e9b425' : '#ffffff'};
+    };    
 `;
 
 export const InputStyled = styled.input`
@@ -37,3 +35,5 @@ export const IconStyled = styled.img`
     width: ${toRem(20)};
     color: #e0e0e0;
 `;
+
+
