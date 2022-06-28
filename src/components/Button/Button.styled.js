@@ -7,6 +7,7 @@ const StyledButton = styled.button`
     color: white;
     font-size: 1.125rem;
     font-weight: 700;
+    cursor: pointer;
 
     &.Login {
     width: ${toRem(379)};
@@ -16,6 +17,11 @@ const StyledButton = styled.button`
     box-shadow: inset ${toRem(5)} ${toRem(5)} ${toRem(15)} rgba(0, 0, 0, 0.15), ${toRem(5)} ${toRem(5)} ${toRem(15)} rgba(0, 0, 0, 0.5);   
     border: 0.125rem transparent;
     border-radius: ${toRem(50)};  
+    }
+
+    &.Login:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
     }
 
     &.Logout {
