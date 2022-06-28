@@ -12,7 +12,6 @@ export const FormStyled = styled.form`
 export const FormTitleStyled = styled.div`
     display: flex;
     align-items: center;
-
 `;
 
 export const InputsStyled = styled.div`
