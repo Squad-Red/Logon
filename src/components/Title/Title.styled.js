@@ -1,11 +1,6 @@
 import styled from "styled-components";
 import { toRem } from "../../utils/convertToRem";
 
-export const StyledTest = styled.p`
-    color:black;
-    font-size: 128px;
-`;
-
 export const StyledH2 = styled.h2`
     font-size: ${toRem(64)};
     font-weight: 700;
