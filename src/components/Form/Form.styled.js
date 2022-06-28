@@ -15,6 +15,15 @@ export const InputsStyled = styled.div`
     justify-content: space-between;
 `;
 
-export const FormBtnStyled = styled.div`
-    margin-top: ${toRem(115)};
+export const FormFooterStyled = styled.div`
+    display: grid;
+    grid-template-rows: auto auto
+`;
+
+export const ErrorMessagesStyled = styled.span`
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    color: #E9B425;
+    margin-top: ${toRem(28)}
 `;
