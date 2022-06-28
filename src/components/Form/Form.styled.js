@@ -6,7 +6,7 @@ export const FormStyled = styled.form`
     height: ${toRem(405)};
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 17.28% 37.78% 44.94%;
+    grid-template-rows: 17.28% 37.78% 28.4% 16.54%;
 `;
 
 export const InputsStyled = styled.div`
@@ -15,9 +15,10 @@ export const InputsStyled = styled.div`
     justify-content: space-between;
 `;
 
-export const FormFooterStyled = styled.div`
-    display: grid;
-    grid-template-rows: auto auto
+export const FormErrorStyled = styled.div`
+    text-align: center;
+    display: flex;
+
 `;
 
 export const ErrorMessagesStyled = styled.span`
@@ -25,5 +26,12 @@ export const ErrorMessagesStyled = styled.span`
     font-weight: 700;
     text-align: center;
     color: #E9B425;
-    margin-top: ${toRem(28)}
+    margin-top: ${toRem(28)};
 `;
+
+export const FormButtonStyled = styled.div`
+    display: grid;
+    grid-template-rows: auto;
+`;
+
+
