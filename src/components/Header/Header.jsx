@@ -5,7 +5,7 @@ import { Weather } from '../Weather/Weather'
 import { HeaderStyled, LogoDiv } from './Header.styled'
 
 
-const Header = () => {
+export const Header = () => {
     return (
         <HeaderStyled>
             <LogoDiv>
@@ -17,6 +17,4 @@ const Header = () => {
            
         </HeaderStyled>
     )
-}
-
-export default Header;
+};
