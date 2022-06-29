@@ -51,4 +51,5 @@ export default StyledButton;
 
 export const ButtonContainer = styled.div`
     display: flex;
+    min-width: 100%;
 `;
