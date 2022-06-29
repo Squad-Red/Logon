@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { toRem } from "../../utils/convertToRem";
+import styled from 'styled-components';
+import {toRem} from '../../utils/convertToRem';
 
 export const FormStyled = styled.form`
     max-width: ${toRem(379)};
@@ -21,21 +21,15 @@ export const InputsStyled = styled.div`
 `;
 
 export const FormErrorStyled = styled.div`
-    text-align: center;
     display: flex;
+    justify-content: center;
 `;
 
 export const ErrorMessagesStyled = styled.span`
+    max-width: 30ch;
     font-size: 1rem;
     font-weight: 700;
     text-align: center;
-    color: #E9B425;
+    color: #e9b425;
     margin-top: ${toRem(28)};
 `;
-
-export const FormButtonStyled = styled.div`
-    display: grid;
-    grid-template-rows: auto;
-`;
-
-
