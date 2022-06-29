@@ -5,7 +5,7 @@ export const TimerContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
-    max-width: ${toRem(237)};
+    width: ${toRem(237)};
 `;
 
 export const TimerText = styled.span`
@@ -16,7 +16,7 @@ export const TimerText = styled.span`
 `;
 
 export const CountdownContainer = styled(TimerContainer)`
-    width: ${toRem(94)};
+    max-width: ${toRem(94)};
     flex-direction: column;
 `;
 
