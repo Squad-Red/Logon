@@ -1,4 +1,5 @@
 import React, {useContext, useEffect, useState} from 'react';
+import styled from 'styled-components';
 import {Timer} from './components/Timer/Timer';
 import Button from './components/Button/Button';
 
@@ -21,13 +22,20 @@ function App() {
             }}
         >
             <Timer />
-            <Button
-                id={'Login'}
-                title={'Reset'}
-                onClick={() => setTimer(600)}
-            />
+            <ButtonWrapper>
+                <Button
+                    id={'Login'}
+                    title={'Reset'}
+                    onClick={() => setTimer(600)}
+                />
+            </ButtonWrapper>
         </div>
     );
 }
 
 export default App;
+
+const ButtonWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+`;
