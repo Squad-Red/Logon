@@ -8,13 +8,11 @@ import { HeaderStyled, LogoDiv } from './Header.styled'
 export const Header = () => {
     return (
         <HeaderStyled>
-            <LogoDiv>
-                <Logo variant='black'/>
+            < LogoDiv>
+                <Logo variant='black' />
             </LogoDiv>
-            <Clock/>
-           
+            <Clock />
             <Weather />
-           
         </HeaderStyled>
     )
 };
