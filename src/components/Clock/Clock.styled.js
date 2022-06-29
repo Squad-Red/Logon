@@ -6,16 +6,16 @@ export const ClockDiv = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: ${toRem(30)};
+    margin-top: 1.4rem;
 `;
 
-export const HoursStyled = styled.p` 
+export const HoursStyled = styled.h1` 
     font-family: 'Poppins', sans-serif;
     color: #222222;
     font-weight: 700;
-    font-size: ${toRem(110)};
+    font-size: ${toRem(107)};
     margin: 0;    
-    line-height: ${toRem(100)};
+    line-height: ${toRem(90)};
 `;
 
 
@@ -23,6 +23,6 @@ export const DateStyled = styled.p`
     font-family: 'Poppins', sans-serif;
     color: #222222;
     font-weight: 400;
-    font-size: ${toRem(12)};
+    font-size: ${toRem(11)};
     margin: 0;  
 `;
