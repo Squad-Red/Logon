@@ -27,22 +27,21 @@ const StyledButton = styled.button`
 
     &.Logout {
         width: ${toRem(89)};
-        height: ${toRem(55)};
+        height: ${toRem(100)};
         background: transparent;
         border: none;
     }
 
     &.ResetTimer {
         width: ${toRem(131)};
-        height: ${toRem(99)};
+        height: ${toRem(100)};
         background: #ffffff;
         color: #c13216;
         font-weight: 400;
         font-size: 0.75rem;
         border: none;
         @media (max-width: 768px) {
-            width: ${toRem(350)};
-            height: ${toRem(99)};
+            width: 100%;
         }
     }
 `;
@@ -52,4 +51,5 @@ export default StyledButton;
 export const ButtonContainer = styled.div`
     display: flex;
     min-width: 100%;
+    justify-content: center;
 `;
