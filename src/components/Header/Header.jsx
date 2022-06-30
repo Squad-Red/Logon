@@ -1,22 +1,19 @@
-import React from 'react'
-import { Clock } from '../Clock/Clock'
-import { Logo } from '../Logo/Logo'
-import { Weather } from '../Weather/Weather'
-import { HeaderStyled, LogoDiv, WeatherDiv, DivClock } from './Header.styled'
-
+import React from 'react';
+import {Clock} from '../Clock/Clock';
+import {Logo} from '../Logo/Logo';
+import {Weather} from '../Weather/Weather';
+import {HeaderStyled, LogoDiv, WeatherDiv} from './Header.styled';
 
 export const Header = () => {
     return (
         <HeaderStyled>
-            < LogoDiv>
+            <LogoDiv>
                 <Logo variant='black' />
             </LogoDiv>
-            <DivClock>
-                <Clock />
-            </DivClock>
+            <Clock />
             <WeatherDiv>
                 <Weather />
             </WeatherDiv>
         </HeaderStyled>
-    )
+    );
 };
