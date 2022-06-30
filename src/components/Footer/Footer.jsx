@@ -1,10 +1,11 @@
 import {useContext} from 'react';
 import {
     ButtonContainer,
-    ButtonDiv,
     FooterStyled,
     InfoDiv,
     InteractiveDiv,
+    LogoutDiv,
+    ResetDiv,
     TimerDiv,
 } from './Footer.styled';
 import {Text} from '../Text/Text';
@@ -21,16 +22,16 @@ const TimerArea = () => {
                 <Timer />
             </TimerDiv>
             <ButtonContainer>
-                <ButtonDiv width='100%'>
+                <ResetDiv>
                     <Button
                         title='Continuar navegando'
                         id='ResetTimer'
                         onClick={() => setTimer(600)}
                     />
-                </ButtonDiv>
-                <ButtonDiv width='100%'>
+                </ResetDiv>
+                <LogoutDiv>
                     <Button title='Logout' id='Logout' />
-                </ButtonDiv>
+                </LogoutDiv>
             </ButtonContainer>
         </InteractiveDiv>
     );
