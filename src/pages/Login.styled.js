@@ -18,6 +18,7 @@ export const BoxLeft = styled.div`
     display: grid;
     grid-template-rows: 10.46% 33.7% 55.84%;
     justify-content: center;
+    padding: 0 ${toRem(20)};
 `;
 
 export const LogoLeftDiv = styled.div`
