@@ -27,7 +27,7 @@ const StyledButton = styled.button`
 
     &.Logout {
         width: ${toRem(89)};
-        height: ${toRem(55)};
+        height: ${toRem(100)};
         background: transparent;
         border: none;
     }
@@ -51,4 +51,5 @@ export default StyledButton;
 export const ButtonContainer = styled.div`
     display: flex;
     min-width: 100%;
+    justify-content: center;
 `;
