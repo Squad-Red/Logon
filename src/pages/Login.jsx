@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContainerLogin, BoxRight, LogoDiv, BoxLeft, Greeting } from './Login.styled';
+import { ContainerLogin, BoxRight, LogoRightDiv, BoxLeft, Greeting, LogoLeftDiv } from './Login.styled';
 import { Logo } from '../components/Logo/Logo';
 import Title from '../components/Title/Title';
 import { Text } from '../components/Text/Text';
@@ -9,16 +9,19 @@ const Login = () => {
     return (
         <ContainerLogin>
             <BoxLeft>
-               <Greeting>
-                <Title tagName="h3" text="Olá,"/>
-                <Text text="Para continuar navegando de forma segura, efetue o login na rede." page="logon" />
-                </Greeting> 
+                <LogoLeftDiv>
+                    <Logo />
+                </LogoLeftDiv>
+                <Greeting>
+                    <Title tagName="h3" text="Olá," />
+                    <Text text="Para continuar navegando de forma segura, efetue o login na rede." page="logon" />
+                </Greeting>
                 <Form />
             </BoxLeft>
             <BoxRight>
-                <LogoDiv>
+                <LogoRightDiv>
                     <Logo />
-                </LogoDiv>
+                </LogoRightDiv>
             </BoxRight>
         </ContainerLogin>
     )
