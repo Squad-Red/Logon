@@ -56,7 +56,14 @@ export const ButtonContainer = styled.div`
     }
 `;
 
-export const LogoutDiv = styled.div``;
+export const LogoutDiv = styled.div`
+    width: 7rem;
+
+    @media (max-width: 768px) {
+        width: 10rem;
+    }
+    
+`;
 
 export const ResetDiv = styled.div`
     @media (max-width: 768px) {
