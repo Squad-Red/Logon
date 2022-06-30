@@ -9,11 +9,36 @@ export const HeaderStyled = styled.header`
 `;
 
 export const LogoDiv = styled.div`
-    max-width: ${toRem(206)};
-    max-height: ${toRem(50)};
+    max-width: ${toRem(300)};
+    max-height: ${toRem(84)};
+    margin-top: ${toRem(19)};
+    margin-left: ${toRem(28)};
+
+    @media screen and (max-width: 780px) {
+        max-width: ${toRem(248)};
+        max-height: ${toRem(84)};
+        margin-top: ${toRem(3)};
+        margin-left: ${toRem(9)};
+    }
 `;
 
 export const WeatherDiv = styled.div`
-    flex-basis: ${toRem(206)};
-    max-width: ${toRem(206)};
+    flex-basis: ${toRem(300)};
+    max-width: ${toRem(300)};
+    margin-right: ${toRem(40)};
+
+    @media screen and (max-width: 780px) {
+        margin-top: ${toRem(24)};
+        margin-right: ${toRem(32)};
+        max-width: ${toRem(132)};
+        max-height: ${toRem(89)};
+    }
+`;
+
+export const DivClock = styled.div`
+    margin-top: ${toRem(52)};
+
+    @media screen and (max-width: 780px) {
+        display: none;
+    }
 `;

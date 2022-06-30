@@ -2,7 +2,7 @@ import React from 'react';
 import {Clock} from '../Clock/Clock';
 import {Logo} from '../Logo/Logo';
 import {Weather} from '../Weather/Weather';
-import {HeaderStyled, LogoDiv, WeatherDiv} from './Header.styled';
+import {HeaderStyled, LogoDiv, WeatherDiv, DivClock} from './Header.styled';
 
 export const Header = () => {
     return (
@@ -10,7 +10,9 @@ export const Header = () => {
             <LogoDiv>
                 <Logo variant='black' />
             </LogoDiv>
-            <Clock />
+            <DivClock>
+                <Clock />
+            </DivClock>
             <WeatherDiv>
                 <Weather />
             </WeatherDiv>
