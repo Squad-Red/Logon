@@ -3,14 +3,14 @@ import {toRem} from '../utils/convertToRem';
 import Notebook from '../assets/img/notebook-background.png';
 
 export const ContainerLogin = styled.div`
-    width: 100vw;
-    height: 100%;
-    background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
+    width: 100%;
+    min-height: 100%;
+    background: linear-gradient(180deg, #33383d 0%, #1c1d20 100%);
     display: grid;
-    grid-template-columns: 50% 50%; 
+    grid-template-columns: 50% 50%;
 
     @media (max-width: 768px) {
-    grid-template-columns: auto;
+        grid-template-columns: auto;
     }
 `;
 
@@ -21,14 +21,15 @@ export const BoxLeft = styled.div`
 `;
 
 export const LogoLeftDiv = styled.div`
-    width:  ${toRem(349)};
+    display: flex;
+    width: ${toRem(349)};
     height: ${toRem(94)};
     margin-top: ${toRem(19)};
-    margin-left:${toRem(-24)};
+    margin-left: ${toRem(-24)};
     visibility: hidden;
 
     @media (max-width: 768px) {
-    visibility: visible;
+        visibility: visible;
     }
 `;
 
@@ -44,13 +45,13 @@ export const BoxRight = styled.div`
     display: flex;
 
     @media (max-width: 768px) {
-    visibility: hidden;
-    display: none;
+        visibility: hidden;
+        display: none;
     }
 `;
 
 export const LogoRightDiv = styled.div`
-    width:  ${toRem(349)};
+    width: ${toRem(349)};
     height: ${toRem(94)};
     margin-top: ${toRem(19)};
 `;
