@@ -10,14 +10,28 @@ display: grid;
 grid-template-columns: 50% 50%; 
 `;
 
+export const BoxLeft = styled.div`
+display: grid;
+grid-template-rows: 44.17% 55.83%;
+justify-content: center;
+`;
+
+export const Greeting = styled.div`
+margin-top: ${toRem(197)};
+`;
+
+
 export const BoxRight = styled.div`
 background-image: url(${Notebook});
 background-position: right top;
 background-size: cover;
+justify-content: center;
+display: flex;
+
 `;
 
 export const LogoDiv = styled.div`
 width:  ${toRem(349)};
 height: ${toRem(94)};
-margin-top:  ${toRem(19)};
+margin-top: ${toRem(19)};
 `;
