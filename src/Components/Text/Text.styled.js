@@ -25,9 +25,7 @@ export const TextDiv = styled.div`
         &.logon {
             max-width: ${toRem(230)} ;
         }
-        
     }
-   
 `;
 
 export const TextWrapper = styled.p`
@@ -52,7 +50,7 @@ export const TextWrapper = styled.p`
         font-size: 0.75rem;
         text-align: right;
         user-select: none;
-        margin-right: ${toRem(40)};   
+        margin-right: ${toRem(25)};   
     }
 
     @media screen and (max-width: 780px) {
