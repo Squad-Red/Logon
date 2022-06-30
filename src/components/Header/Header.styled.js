@@ -18,7 +18,7 @@ export const LogoDiv = styled.div`
         max-width: ${toRem(248)};
         max-height: ${toRem(84)};
         margin-top: ${toRem(3)};
-        margin-left: ${toRem(9)};
+        margin-left: ${toRem(5)};
     }
 `;
 
@@ -26,10 +26,11 @@ export const WeatherDiv = styled.div`
     flex-basis: ${toRem(300)};
     max-width: ${toRem(300)};
     margin-right: ${toRem(40)};
+    margin-top: ${toRem(25)};
 
     @media screen and (max-width: 780px) {
         margin-top: ${toRem(24)};
-        margin-right: ${toRem(32)};
+        margin-right: ${toRem(22)};
         max-width: ${toRem(132)};
         max-height: ${toRem(89)};
     }
