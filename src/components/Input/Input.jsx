@@ -1,11 +1,14 @@
 import React from 'react';
 import {IconStyled, InputContainer, InputStyled} from './Input.styled';
 
-export const Input = ({src, placeholder, type}) => {
+import lock from '../../assets/icons/lock.svg';
+import person from '../../assets/icons/person.svg';
+
+export const Input = ({placeholder, type, register, isError}) => {
     return (
-        <InputContainer>
-            <InputStyled placeholder={placeholder} type={type} />
-            <IconStyled src={src} />
+        <InputContainer isError={isError}>
+            <InputStyled placeholder={placeholder} type={type} {...register}/>
+            <IconStyled src={type === 'password' ? lock : person} />
         </InputContainer>
     );
 };
