@@ -13,6 +13,7 @@ export const Location = styled.p`
     color: #222222;
     margin-bottom: ${toRem(10)};
     text-align: right;
+    margin-top: 0;
 `;
 
 export const WeatherGroup = styled.div`
