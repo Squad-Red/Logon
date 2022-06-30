@@ -22,7 +22,7 @@ const Form = () => {
     return (
         <FormStyled onSubmit={handleSubmit(onSubmit)}>
             <FormTitleStyled>
-                <Title tagName='h4' text='Login' />
+                <Title tagName='h5' text='Login' />
             </FormTitleStyled>
             <InputsStyled>
                 <Input
