@@ -3,35 +3,54 @@ import {toRem} from '../utils/convertToRem';
 import Notebook from '../assets/img/notebook-background.png';
 
 export const ContainerLogin = styled.div`
-width: 100vw;
-height: 100vh;
-background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
-display: grid;
-grid-template-columns: 50% 50%; 
+    width: 100vw;
+    height: 100%;
+    background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
+    display: grid;
+    grid-template-columns: 50% 50%; 
+
+    @media (max-width: 768px) {
+    grid-template-columns: auto;
+    }
 `;
 
 export const BoxLeft = styled.div`
-display: grid;
-grid-template-rows: 44.17% 55.83%;
-justify-content: center;
+    display: grid;
+    grid-template-rows: 10.46% 33.7% 55.84%;
+    justify-content: center;
+`;
+
+export const LogoLeftDiv = styled.div`
+    width:  ${toRem(349)};
+    height: ${toRem(94)};
+    margin-top: ${toRem(19)};
+    margin-left:${toRem(-24)};
+    visibility: hidden;
+
+    @media (max-width: 768px) {
+    visibility: visible;
+    }
 `;
 
 export const Greeting = styled.div`
-margin-top: ${toRem(197)};
+    margin-top: ${toRem(84)};
 `;
-
 
 export const BoxRight = styled.div`
-background-image: url(${Notebook});
-background-position: right top;
-background-size: cover;
-justify-content: center;
-display: flex;
+    background-image: url(${Notebook});
+    background-position: right top;
+    background-size: cover;
+    justify-content: center;
+    display: flex;
 
+    @media (max-width: 768px) {
+    visibility: hidden;
+    display: none;
+    }
 `;
 
-export const LogoDiv = styled.div`
-width:  ${toRem(349)};
-height: ${toRem(94)};
-margin-top: ${toRem(19)};
+export const LogoRightDiv = styled.div`
+    width:  ${toRem(349)};
+    height: ${toRem(94)};
+    margin-top: ${toRem(19)};
 `;
