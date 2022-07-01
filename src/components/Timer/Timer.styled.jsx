@@ -5,7 +5,7 @@ export const TimerContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: ${toRem(215)};
+    width: ${toRem(237)};
 `;
 
 export const TimerText = styled.span`
