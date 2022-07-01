@@ -11,7 +11,7 @@ export const StyledH2 = styled.h2`
     font-weight: 700;
     color:#C12D18;
     text-align: right;
-    line-height:${toRem(96)};
+    line-height:${toRem(67)};
     margin: 0;  
     margin-block-start: 0;
     margin-block-end: 0;
@@ -32,7 +32,7 @@ export const StyledH4 = styled.h4`
     font-weight: 700;
     color: #C12D18;
     text-align: right;    
-    line-height:${toRem(54)};
+    line-height:${toRem(38)};
     margin: 0;  
     margin-block-start: 0;
     margin-block-end: 0;
