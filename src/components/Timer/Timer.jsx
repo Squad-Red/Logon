@@ -1,4 +1,5 @@
 import {useContext, useEffect} from 'react';
+import {useNavigate} from 'react-router-dom';
 
 import {
     Countdown,
@@ -10,6 +11,8 @@ import {
 import {TimerContext} from '../../contexts/TimerProvider';
 
 export const Timer = () => {
+    const navigate = useNavigate();
+
     const [timer, setTimer] = useContext(TimerContext);
 
     useEffect(() => {
@@ -18,7 +21,7 @@ export const Timer = () => {
             return () => {
                 clearTimeout(countDown);
             };
-        }
+        } else navigate('/');
     }, [timer]);
 
     return (

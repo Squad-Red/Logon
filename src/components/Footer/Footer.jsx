@@ -1,4 +1,6 @@
 import {useContext} from 'react';
+import {useNavigate} from 'react-router-dom';
+
 import {
     ButtonContainer,
     FooterStyled,
@@ -15,6 +17,7 @@ import Button from '../Button/Button';
 import TimerProvider, {TimerContext} from '../../contexts/TimerProvider';
 
 const TimerArea = () => {
+    const navigate = useNavigate();
     const [timer, setTimer] = useContext(TimerContext);
     return (
         <InteractiveDiv>
@@ -30,7 +33,11 @@ const TimerArea = () => {
                     />
                 </ResetDiv>
                 <LogoutDiv>
-                    <Button title='Logout' id='Logout' />
+                    <Button
+                        title='Logout'
+                        id='Logout'
+                        onClick={() => navigate('/')}
+                    />
                 </LogoutDiv>
             </ButtonContainer>
         </InteractiveDiv>
