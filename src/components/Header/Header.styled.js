@@ -14,7 +14,7 @@ export const LogoDiv = styled.div`
     margin-top: ${toRem(19)};
     margin-left: ${toRem(28)};
 
-    @media screen and (max-width: 780px) {
+    @media screen and (max-width: 768px) {
         max-width: ${toRem(248)};
         max-height: ${toRem(84)};
         margin-top: ${toRem(3)};
@@ -28,7 +28,7 @@ export const WeatherDiv = styled.div`
     margin-right: ${toRem(40)};
     margin-top: ${toRem(25)};
 
-    @media screen and (max-width: 780px) {
+    @media screen and (max-width: 768px) {
         margin-top: ${toRem(24)};
         margin-right: ${toRem(22)};
         max-width: ${toRem(132)};
@@ -39,7 +39,7 @@ export const WeatherDiv = styled.div`
 export const DivClock = styled.div`
     margin-top: ${toRem(52)};
 
-    @media screen and (max-width: 780px) {
+    @media screen and (max-width: 768px) {
         display: none;
     }
 `;
