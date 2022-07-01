@@ -21,7 +21,7 @@ export const Timer = () => {
             return () => {
                 clearTimeout(countDown);
             };
-        } else navigate('home');
+        } else navigate('/');
     }, [timer]);
 
     return (
