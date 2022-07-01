@@ -7,6 +7,13 @@ import {
     WeatherContainer,
 } from './Weather.styled';
 
+import sun from './src/assets/icons/002-sun.png';
+import cloudy from './src/assets/icons/013-cloudy-1.png';
+import cloud from './src/assets/icons/004-cloud.png';
+import raining from './src/assets/icons/006-raining.png';
+import storm from './src/assets/icons/006-storm.png';
+import thunder from './src/assets/icons/006-storm-1.png';
+
 import {weather} from '../../api/weather';
 
 const queryWeather = async (query) => {
@@ -20,19 +27,19 @@ const queryWeather = async (query) => {
 const selectIcon = (code) => {
     switch (code) {
         case 1000:
-            return './src/assets/icons/002-sun.png';
+            return sun;
         case 1003:
-            return './src/assets/icons/013-cloudy-1.png';
+            return cloudy;
         case (code >= 1006 && code <= 1030) || (code > 1087 && code < 1150):
-            return './src/assets/icons/004-cloud.png';
+            return cloud;
         case (code >= 1063 && code < 1087) ||
             (code >= 1150 && code < 1210) ||
             (code >= 1240 && code < 1273):
-            return './src/assets/icons/006-raining.png';
+            return raining;
         case 1087:
-            return './src/assets/icons/006-storm.png';
+            return storm;
         case code >= 1273:
-            return './src/assets/icons/006-storm-1.png';
+            return thunder;
     }
 };
 
