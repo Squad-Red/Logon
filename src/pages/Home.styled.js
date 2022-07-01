@@ -15,7 +15,6 @@ export const ContentHome = styled.div`
 
     @media (max-width: 768px) {
         grid-template-columns: auto;
-        padding-right: ${toRem(32)};
     }
 `;
 
