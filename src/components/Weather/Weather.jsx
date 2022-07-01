@@ -7,12 +7,12 @@ import {
     WeatherContainer,
 } from './Weather.styled';
 
-import sun from './src/assets/icons/002-sun.png';
-import cloudy from './src/assets/icons/013-cloudy-1.png';
-import cloud from './src/assets/icons/004-cloud.png';
-import raining from './src/assets/icons/006-raining.png';
-import storm from './src/assets/icons/006-storm.png';
-import thunder from './src/assets/icons/006-storm-1.png';
+import sun from '../../assets/icons/002-sun.png';
+import cloudy from '../../assets/icons/013-cloudy-1.png';
+import cloud from '../../assets/icons/004-cloud.png';
+import raining from '../../assets/icons/006-raining.png';
+import storm from '../../assets/icons/007-storm.png';
+import thunder from '../../assets/icons/011-storm-1.png';
 
 import {weather} from '../../api/weather';
 
