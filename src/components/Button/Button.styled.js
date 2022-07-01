@@ -26,10 +26,11 @@ const StyledButton = styled.button`
     }
 
     &.Logout {
-        width: ${toRem(89)};
+        width: 100%;
         height: ${toRem(100)};
         background: transparent;
         border: none;
+        font-size: 0.75rem;
     }
 
     &.ResetTimer {
