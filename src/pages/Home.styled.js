@@ -15,6 +15,11 @@ grid-template-rows: 30.28% 60.46% 9.26%;
 export const ContentHome = styled.div`
     display: grid;
     grid-template-columns: 35.31% 64.69%;    
+    
+    @media (max-width: 768px) {
+       grid-template-columns: auto;
+       padding-right: ${toRem(32)};
+    }
 `;
 
 export const BoxHomeLeft = styled.div`   
@@ -23,15 +28,30 @@ export const BoxHomeLeft = styled.div`
 `;
 
 export const BrandDiv = styled.div`
-    grid-row: 2/3;
-    background-image: url(${UolBall});
-    background-repeat: no-repeat;
-    background-size: content;
-    background-position: right top;
+    grid-row: 2/3;       
+    overflow: hidden;   
+`;
+
+export const BrandImg = styled.img`   
+    max-width: 100%;    
+    min-width: ${toRem(660)};
+    margin-left: ${toRem(-146)};
+    margin-bottom: ${toRem(-242)};        
+    
+
+    @media (max-width: 768px) {
+    max-width: ${toRem(660)}; 
+    margin-left: ${toRem(-213)};    
+    }
 `;
 
 export const BoxHomeRight = styled.div`
 padding-right: ${toRem(134)};
+
+@media (max-width: 768px) {
+        visibility: hidden;
+        display: none;
+    }
 `;
 
 
