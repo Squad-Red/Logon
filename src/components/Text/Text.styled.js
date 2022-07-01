@@ -34,10 +34,11 @@ export const TextWrapper = styled.p`
 
     &.home {
         color: #222222;
-        font-size: 1.5rem;
+        font-size: 1.4vw;
         text-align: right;
         margin-block-start: 0;
         margin-block-end: 0;
+        line-height: 2.1vw;
     }
 
     &.home-footer {

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Input } from '../Input/Input';
+import {useNavigate} from 'react-router-dom';
+import {Input} from '../Input/Input';
 import Button from '../Button/Button';
 import {
     FormStyled,
@@ -8,16 +9,19 @@ import {
     FormErrorStyled,
     FormTitleStyled,
 } from './Form.styled';
-import { useForm } from 'react-hook-form';
+import {useForm} from 'react-hook-form';
 import Title from '../Title/Title';
 
 const Form = () => {
     const {
         register,
         handleSubmit,
-        formState: { errors },
+        formState: {errors},
     } = useForm();
-    const onSubmit = (data) => console.log(data);
+
+    const navigate = useNavigate();
+
+    const onSubmit = () => navigate('home');
 
     return (
         <FormStyled onSubmit={handleSubmit(onSubmit)}>
