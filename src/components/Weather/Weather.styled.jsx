@@ -5,7 +5,6 @@ export const WeatherContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    user-select: none;
 `;
 
 export const Location = styled.p`
