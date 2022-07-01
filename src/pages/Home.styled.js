@@ -1,14 +1,14 @@
 import styled from 'styled-components';
-import {toRem} from '../utils/convertToRem';
+import { toRem } from '../utils/convertToRem';
 import UolBall from '../assets/img/uol-ball-transparent-1.png';
 
 
 export const ContainerHome = styled.div`
     width: 100%;
     min-height: 100%;
-background: linear-gradient(105.96deg, #FFFFFF 0%, #F0F0F0 97.86%);
-display: grid;
-grid-template-rows: 30.28% 60.46% 9.26%;
+    background: linear-gradient(105.96deg, #FFFFFF 0%, #F0F0F0 97.86%);
+    display: grid;
+    grid-template-rows: 30.28% 60.46% 9.26%;
 
 `;
 
@@ -37,7 +37,6 @@ export const BrandImg = styled.img`
     min-width: ${toRem(660)};
     margin-left: ${toRem(-146)};
     margin-bottom: ${toRem(-242)};        
-    
 
     @media (max-width: 768px) {
     max-width: ${toRem(660)}; 
@@ -46,9 +45,13 @@ export const BrandImg = styled.img`
 `;
 
 export const BoxHomeRight = styled.div`
-padding-right: ${toRem(134)};
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 7vw;
+    padding-bottom: 2vw;
 
-@media (max-width: 768px) {
+    @media (max-width: 768px) {
         visibility: hidden;
         display: none;
     }
