@@ -56,7 +56,7 @@ export const getWeather = (setLocation, setIcon, setTemperature) => {
                         '',
                     )}`,
                 );
-                setIcon(selectIcon(1003));
+                setIcon(selectIcon(data.current.condition.code));
                 setTemperature(`${data.current.temp_c}º`);
             } catch (error) {
                 setLocation('Clima indisponível');
